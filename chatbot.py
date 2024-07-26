@@ -17,9 +17,9 @@ st.write("answer from chatbot.")
 question = st.text_input("Me:", "")
 
 # # Button to send the question   
-# if st.button("sned to my chatbot"):
-#     if question.strip():
-#         response = chat.send_message(question)
-#         st.write("AI:", response.text)
-#     else:
-#         st.write("Please enter a question.")
+if st.button("sned to my chatbot"):
+    if question.strip():
+        response = chat.send_message(question)
+        st.write("AI:", response.text)
+    else:
+        st.write("Please enter a question.")
